@@ -1,8 +1,8 @@
 #include "monty.h"
 /**
- * _push - add int to stack
- * @stack: list containing stacked int
- * @line_number: line number of opcode
+ * _push - pushes int to stack
+ * @stack: linked lists for monty stack
+ * @line_number: number of line opcode occurs on
  */
 void _push(stack_t **stack, __attribute__ ((unused))unsigned int line_number)
 {
@@ -82,8 +82,9 @@ void _pop(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * free_dlistint - free up the list
- * @head: first node pointer
+ * free_dlistint - frees a list
+ * @head: pointer to first node
+ *
  */
 void free_dlistint(stack_t *head)
 {
